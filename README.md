@@ -59,7 +59,7 @@ The .projectile file contains all projectile configurations, please adapt it to 
    9. **C-c C-d** - popup the documentation.
    10. **C-c C-e** - edit all occurrences of the symbol at point at once.
    11. **C-c C-r i** - clever import.
-   12. **C-c C-x r (elpy-django-runserver)** - start the development server command, runserver
+   12. **M-x eshell** - start the shell.
    
  ### Git
    1. **C-x g** - popup the Magit window (https://github.com/magit/magit)
