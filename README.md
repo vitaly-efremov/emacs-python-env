@@ -14,8 +14,8 @@ Install packages from requrements.txt
  pip install -r requrements.txt
 ```
 
-## Virtual Environment (https://github.com/porterjamesj/virtualenvwrapper.el)
-If you're using the virtual environment then copy .dir-locals.el to your project root (usually git dir) and replace *YOUR_ENV* with particular venv name.
+## Virtual Environment
+If you're using the virtual environment then copy .dir-locals.el to your project root (usually git dir) and replace *YOUR_ENV* with particular venv name. See https://github.com/porterjamesj/virtualenvwrapper.el for details.
 ```
   cp .dir-locals.el your/project/dir/
   vi .dir-locals.el
