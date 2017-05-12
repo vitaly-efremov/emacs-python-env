@@ -1,0 +1,4 @@
+flake8==3.3.0
+rope==0.10.5
+pyflakes==1.5.0
+elpy==1.14.1
