@@ -2,3 +2,6 @@ flake8==3.3.0
 rope==0.10.5
 pyflakes==1.5.0
 elpy==1.14.1
+autopep8==1.3.1
+importmagic==0.1.7
+yapf==0.16.1
