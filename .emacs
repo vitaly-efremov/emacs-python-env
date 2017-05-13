@@ -17,11 +17,8 @@
  '(ecb-options-version "2.50")
  '(package-selected-packages
    (quote
-    (virtualenvwrapper ecb magit better-defaults py-autopep8 material-theme flycheck elpy projectile virtualenvwrapper ##)))
- '(safe-local-variable-values
-   (quote
-    ((eval venv-workon “sushi_env”)
-     (eval venv-workon "sushi_env")))))
+    (virtualenvwrapper ecb magit better-defaults py-autopep8 material-theme flycheck elpy projectile ##)))
+ '(safe-local-variable-values (quote ((eval venv-workon "sushi_env")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -51,11 +48,16 @@
 (defvar myPackages
   '(better-defaults
     elpy
-    monokai-theme
     flycheck
     py-autopep8
     magit
-    dashboard))
+    dashboard
+    virtualenvwrapper
+    material-theme
+    projectile
+    flycheck
+    neotree
+    ecb))
 
 (mapc #'(lambda (package)
               (unless (package-installed-p package)
@@ -99,7 +101,6 @@
     (add-hook 'elpy-mode-hook 'flycheck-mode))
 
 ;; Neo Tree -> F8
-(add-to-list 'load-path "~/.emacs.d/neotree")
 (require 'neotree)
 (global-set-key [f8] 'neotree-toggle)
 
