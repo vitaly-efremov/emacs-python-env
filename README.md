@@ -20,6 +20,14 @@ If you're using the virtual environment then copy .dir-locals.el to your project
   cp .dir-locals.el your/project/dir/
   vi .dir-locals.el
 ```
+To exclude this file locally (if you don't want to put it to .gitignore) add it to the file .git/info/exclude.
+```
+vim .git/info/exclude
+```
+or
+```
+git update-index --assume-unchanged .dir-locals.el
+```
 
 ## Fonts installation
 Emacs configuration can use different fonts (like Dejavu, Consolas), please install them if needed. For instance OS X install process:
