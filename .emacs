@@ -18,7 +18,7 @@
  '(package-selected-packages
    (quote
     (virtualenvwrapper ecb magit better-defaults py-autopep8 material-theme flycheck elpy projectile ##)))
- '(safe-local-variable-values (quote ((eval venv-workon "sushi_env")))))
+ '(safe-local-variable-values (quote ((eval venv-workon "sushi")))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -200,7 +200,7 @@
 
 ;; Set default window size 70*240
 (add-to-list 'default-frame-alist '(height . 70))
-(add-to-list 'default-frame-alist '(width . 240))
+(add-to-list 'default-frame-alist '(width . 158))
 
 ;; Configure virtualenvwrapper
 (require 'virtualenvwrapper)
@@ -209,3 +209,16 @@
 (setq venv-location "~/.virtualenvs/")
 (setq projectile-switch-project-action 'venv-projectile-auto-workon)
 (setq-default mode-line-format (cons '(:exec venv-current-name) mode-line-format))
+
+(unless window-system
+  (require 'mouse)
+  (xterm-mouse-mode t)
+  (global-set-key [mouse-4] (lambda ()
+                              (interactive)
+                              (scroll-down 1)))
+  (global-set-key [mouse-5] (lambda ()
+                              (interactive)
+                              (scroll-up 1)))
+  (defun track-mouse (e))
+  (setq mouse-sel-mode t)
+)
