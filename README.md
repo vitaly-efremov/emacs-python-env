@@ -77,3 +77,8 @@ The .projectile file contains all projectile configurations, please adapt it to 
       **c c** - commit
       
       **P u** - push
+
+ ### Others
+   1. **C-x }** - increase current buffer size.
+   2. **C-x {** - decrease current buffer window.
+   3. **C-x z** - repeat previous command.
