@@ -3,15 +3,15 @@
 # My emacs configuration for Python development
 
 ## Emacs Side
-Copy .emacs to ~./emacs
+Copy .emacs to ~/
 ```
- cp .emacs ~./emacs
+ cp .emacs ~/
 ```
 
 ## Python Side
 Install packages from requrements.txt
 ```
- pip install -r requrements.txt
+ pip install -r requirements.txt
 ```
 
 ## Virtual Environment
